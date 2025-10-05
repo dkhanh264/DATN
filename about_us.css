@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   font-family: Roboto;
+  
 }
 a {
   text-decoration: none;
@@ -14,6 +15,7 @@ a {
 
 .main{
   position: relative;
+  height: 100vh;
 }
 
 .header {
@@ -66,6 +68,7 @@ a {
   font-size: 16px;
   letter-spacing: 1.5%;
   text-transform: uppercase;
+  
 }
 
 .tab-about-us {
@@ -77,15 +80,79 @@ a {
   color: #3746a0 !important;
 }
 
+.tab-home:hover{
+  border-bottom: 4px solid #3746a0;
+  background-clip: border-box;
+
+}
+
+.tab-home:hover a{
+color: #3746a0 !important;
+}
+.tab-about-us:hover{
+  border-bottom: 4px solid #3746a0;
+  background-clip: border-box;
+
+}
+
+.tab-about-us:hover a{
+color: #3746a0 !important;
+}
+.tab-our-products:hover{
+  border-bottom: 4px solid #3746a0;
+  background-clip: border-box;
+
+}
+
+.tab-our-products:hover a{
+color: #3746a0 !important;
+}
+.tab-news:hover{
+  border-bottom: 4px solid #3746a0;
+  background-clip: border-box;
+
+}
+
+.tab-news:hover a{
+color: #3746a0 !important;
+}
+.tab-our-team:hover{
+  border-bottom: 4px solid #3746a0;
+  background-clip: border-box;
+
+}
+
+.tab-our-products:hover a{
+color: #3746a0 !important;
+}
+.tab-contact:hover{
+  border-bottom: 4px solid #3746a0;
+  background-clip: border-box;
+
+}
+
+.tab-contact:hover a{
+color: #3746a0 !important;
+}
+.tab-blogs:hover{
+  border-bottom: 4px solid #3746a0;
+  background-clip: border-box;
+
+}
+
+.tab-blogs:hover a{
+color: #3746a0 !important;
+}
 /*end header */
 
   .content-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     padding-left: 104px;
+    
   }
 
   .content-container{
@@ -136,13 +203,17 @@ left: -60px;
 }
 
 .content-wrapper{
-  height: 100%;
-  width: calc(100% - 104px - 584px);
-  box-shadow: 0px 0px 40px 0px #00000014;
+  width: 50%;
+height: 100%;
+  box-shadow: 0px 0px 40px 0px #0000003b;
   border-radius: 24px 0px 0px 24px;
 }
 
 .content-box{
+  width: 496px;
+height: 504px;
+
+
   padding: 60px 104px 60px 104px;
   position: relative;
 }
