@@ -15,9 +15,9 @@ a {
 
 /* header */
 .header {
-  height: 184px;
+  height: 380px;
   width: 100%;
-  background-image: url(/imgs/abou-us-header-bg.jpg);
+  background-image: url(/imgs/our-products-header-bg.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -118,7 +118,7 @@ color: #3746a0 !important;
 
 }
 
-.tab-our-products:hover a{
+.tab-our-team:hover a{
 color: #3746a0 !important;
 }
 .tab-contact:hover{
@@ -249,7 +249,7 @@ margin-top: 60px;
   
   align-items: center;
 width: 30%;
-height: 424px;
+height: auto;
 margin-bottom: 44px;
 }
 
@@ -258,6 +258,7 @@ margin-bottom: 44px;
   height: 260px;
   border-radius: 24px;
   margin-bottom: 24px;
+  object-fit: cover;
 }
 
 .small-card h2{

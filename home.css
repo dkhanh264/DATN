@@ -14,6 +14,7 @@ a {
 
 .main{
   position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -119,7 +120,7 @@ color: #3746a0 !important;
 
 }
 
-.tab-our-products:hover a{
+.tab-our-team:hover a{
 color: #3746a0 !important;
 }
 .tab-contact:hover{
