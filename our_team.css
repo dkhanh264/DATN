@@ -17,7 +17,7 @@ a {
 .header {
   height: 380px;
   width: 100%;
-  background-image: url(/imgs/our-products-header-bg.jpg);
+  background-image: url(/imgs/our-team-bg.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -67,12 +67,12 @@ a {
   
 }
 
-.tab-our-products {
+.tab-our-team {
   border-bottom: 4px solid #3746a0;
   background-clip: border-box;
 }
 
-.tab-our-products a {
+.tab-our-team a {
   color: #3746a0 !important;
 }
 
@@ -161,6 +161,18 @@ background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
 width: 100%;
 margin-top: 24px;
 }
+.main-title-wrapper p{
+    font-family: Roboto;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 1%;
+text-align: center;
+color: #666666;
+
+}
 
 .main-title{
     position: relative;
@@ -240,22 +252,25 @@ top: 168px;
   flex-wrap: wrap;
 width: 100%;
 justify-content: space-between;
-margin-top: 60px;
+margin-top: 80px;
+margin-bottom: 16px;
 }
 
 .small-card{
   display: flex;
   flex-direction: column;
-  
   align-items: center;
 width: 390px;
 height: auto;
 margin-bottom: 44px;
+padding: 16px;
+box-shadow: 0px 0px 40px 0px #00000014;
+border-radius: 36px;
 }
 
 .small-card img{
   width: 100%;
-  height: 260px;
+  height: 221px;
   border-radius: 24px;
   margin-bottom: 24px;
   object-fit: cover;
@@ -272,18 +287,62 @@ line-height: 150%;
 letter-spacing: 1%;
 color: #4D63E2;
 }
-.small-card p{
-  
+.small-card h3{
 font-family: Roboto;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
 line-height: 150%;
 letter-spacing: 1%;
-color: #666666;
-margin-top: 8px;
-
+text-align: center;
+margin-top: 4px;
+color: #3B3B3B;
 }
+
+.info-wrapper{
+    width: 100%;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.info-row{
+    display: flex;
+    align-items: center;
+}
+
+.info-row i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    color: #666666;
+    margin-right: 8px;
+}
+
+.info-row img{
+    width: 18px !important;
+    height: 18px !important;
+    color: #666666;
+    margin-right: 8px;
+    object-fit: cover;
+    margin-bottom: 0px !important;
+    border-radius: 0px !important;
+}
+
+.info-row p{
+    font-family: Roboto;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: 1.5%;
+color: #666666;
+}
+
 .large-card{
   display: flex;
   flex-direction: column;
@@ -324,6 +383,85 @@ letter-spacing: 1%;
 color: #666666;
 margin-top: 8px;
 
+}
+
+.pagination{
+  display: flex;
+  justify-content: right;
+  box-sizing: border-box;
+  padding-right: 104px;
+  padding-left: 104px;
+  margin-top: 16px;
+  margin-bottom: 80px;
+}
+
+.back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  border-radius: 4px;
+  background-color: #B0B0B0;
+}
+
+.back i{
+  color: #FCFCFC;
+}
+
+.number-page-selection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: 2px solid #3746A0;
+  font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 1.5%;
+text-align: center;
+color: #3746A0;
+}
+
+.number-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: 1.5px solid #EBEBEB;
+  font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 1.5%;
+text-align: center;
+color: #3B3B3B;
+}
+
+.forward{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: 1.5px solid #EBEBEB;
+}
+
+.forward i{
+  color: #B0B0B0;
 }
 /* end main content */
 

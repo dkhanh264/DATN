@@ -259,7 +259,7 @@ font-style: Bold;
 font-size: 24px;
 line-height: 150%;
 letter-spacing: 1%;
-
+color: #3B3B3B;
 }
 
 .header-card-container-content p{
@@ -333,16 +333,14 @@ color: #4D63E2;
   padding-right: 104px;
   flex-wrap: wrap;
 width: 100%;
-gap: 5%;
+justify-content: space-between;
 margin-top: 60px;
 }
 
 .small-card{
   display: flex;
   flex-direction: column;
-  
-  
-width: 30%;
+width: 390px;
 height: fit-content;
 margin-bottom: 44px;
 }
@@ -454,7 +452,6 @@ color: #3746A0;
 font-weight: 700;
 font-style: Bold;
 font-size: 16px;
-leading-trim: NONE;
 line-height: 150%;
 letter-spacing: 1.5%;
 text-align: center;
@@ -472,9 +469,11 @@ color: #3B3B3B;
   border: 1.5px solid #EBEBEB;
 }
 
-.forward{
-  color: #EBEBEB;
+.forward i{
+  color: #B0B0B0;
 }
+
+
 
 /* end main content */
 
@@ -642,7 +641,7 @@ color: #EBEBEB;
 
 .our-products .title,
 .company .title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
   color: white;

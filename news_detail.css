@@ -15,9 +15,8 @@ a {
 
 /* header */
 .header {
-  height: 380px;
+  height: 60px;
   width: 100%;
-  background-image: url(/imgs/our-products-header-bg.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -65,15 +64,6 @@ a {
   letter-spacing: 1.5%;
   text-transform: uppercase;
   
-}
-
-.tab-our-products {
-  border-bottom: 4px solid #3746a0;
-  background-clip: border-box;
-}
-
-.tab-our-products a {
-  color: #3746a0 !important;
 }
 
 .tab-home:hover{
@@ -144,187 +134,276 @@ color: #3746a0 !important;
 /* end header */
 
 /* main content */
-.content-header{
-    width: 100%;
-    height: 216px;
-    display: flex;
-    flex-direction: column;
-position: relative;
-z-index: -1;
-background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
 
+.main-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.main-title-wrapper{
-    position: relative;
-    height: 72px;
-width: 100%;
-margin-top: 24px;
-}
-
-.main-title{
-    position: relative;
-    width: fit-content;
-display: flex;
-margin: 0 auto;
-align-items: center;
-   
-}
-
-.main-title img{
-    position: absolute;
-    left: -30px;
- 
-}
-
-.main-title h1{
-    position: relative;
- font-family: Roboto;
+.main-content h1{
+  width: 55%;
+height: auto;
+font-family: Roboto;
 font-weight: 700;
 font-style: Bold;
 font-size: 48px;
 line-height: 150%;
 letter-spacing: 1%;
 text-align: center;
-color: #2A367C;
-z-index: 1;
+color: #3B3B3B;
+margin-top: 104px;
 }
 
-.main-title-wrapper h2{
-    font-family: Roboto;
-font-weight: 700;
-font-style: Bold;
-font-size: 32px;
+.status-wrapper{
+  display: flex;
+  gap: 20px;
+}
+
+.status-wrapper p{
+  font-family: Roboto;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
 line-height: 150%;
 letter-spacing: 1%;
-text-align: center;
-color: #666666;
-margin-top: 12px;
+color: #B0B0B0;
+margin-top: 20px;
 }
-.main-title-wrapper p{
-    font-family: Roboto;
+
+.main-content img{
+height: 512px;
+width: calc(100% - 208px);
+object-fit: cover;
+margin-top: 40px;
+}
+
+.content-sumary-container{
+  width: calc(100% - 208px);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 104px;
+}
+
+.content{
+  width: 705px;
+  height: auto;
+margin-bottom: 128px;
+}
+
+.content h2{
+  font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 28px;
+color: #3B3B3B;
+line-height: 150%;
+letter-spacing: 1%;
+margin-bottom: 32px;
+}
+
+.content p{
+  display: flex;
+  gap: 12px;
+  font-family: Roboto;
 font-weight: 400;
 font-style: Regular;
 font-size: 16px;
 line-height: 150%;
 letter-spacing: 1%;
-text-align: center;
-
+margin-bottom: 12px;
 color: #666666;
-margin-top: 12px;
 }
 
-.hd-item-1{
-    width: fit-content;
-    position: absolute;
-    top: 0px;
-    right: 36px;
+.title-2{
+    font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 28px;
+color: #3B3B3B;
+line-height: 150%;
+letter-spacing: 1%;
+margin-bottom: 32px;
+margin-top: 20px;
 }
-.hd-item-2{
-    width: fit-content;
-    position: absolute;
-    top: 108px;
-    right: 77px;
+
+.content img{
+  width: 100%;
+  height: auto;
 }
-.hd-item-3{
-    position: absolute;
-    width: fit-content;
-left: 68px;
-top: 168px;
+
+.sumary{
+  position: sticky;
+  width: 437px;
+  height: fit-content;
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #B0B0B0;
+  border-radius: 12px;
+  top: 116px;
+  z-index: -1;
+  bottom: 0px;
+  margin-bottom: 128px;
+}
+
+.sumary h3{
+  font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+color: #3B3B3B;
+line-height: 150%;
+letter-spacing: 1%;
+
+}
+
+.text-wrapper{
+  position: relative;
+  width: 100%;
+  height: fit-content;
+padding-left: 40px;
+margin-top: 24px;
+z-index: -1;
+}
+
+.text-wrapper p{
+  font-family: Roboto;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+color: #B0B0B0;
+line-height: 150%;
+letter-spacing: 1%;
+
+}
+.text-selected{
+  font-family: Roboto;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+color: #000000 !important; 
+line-height: 150%;
+letter-spacing: 1%;
+
+}
+.numb{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #EBEBEB;
+  font-family: Roboto;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 1%;
+top: 0px;
+left: 0px;
+border-radius: 100px;
+color: #B0B0B0;
+}
+.numb-selected{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #666666;
+  font-family: Roboto;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 1%;
+top: 0px;
+left: 0px;
+border-radius: 100px;
+color: #FFFFFF;
+}
+
+.more{
+    width: calc(100% - 208px);
+    padding-top: 24px;
+    border-top: 1px solid #B0B0B0;
+}
+
+.more h3{
+    font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 28px;
+line-height: 150%;
+letter-spacing: 1%;
+margin-bottom: 24px;
+color: #3B3B3B;
 }
 
 .card-container{
   display: flex;
-  padding-left: 104px;
-  padding-right: 104px;
   flex-wrap: wrap;
 width: 100%;
 justify-content: space-between;
-margin-top: 60px;
 }
 
 .small-card{
   display: flex;
   flex-direction: column;
-  
-  align-items: center;
 width: 390px;
-height: auto;
+height: fit-content;
 margin-bottom: 44px;
 }
 
 .small-card img{
   width: 100%;
   height: 260px;
-  border-radius: 24px;
   margin-bottom: 24px;
   object-fit: cover;
+  margin-top: 0px;
 }
 
 .small-card h2{
-  
+max-width: 370px;
   font-family: Roboto;
 font-weight: 700;
 font-style: Bold;
 font-size: 24px;
-
 line-height: 150%;
 letter-spacing: 1%;
-color: #4D63E2;
+
 }
+
 .small-card p{
-  
-font-family: Roboto;
+ 
+  font-family: Roboto;
 font-weight: 400;
 font-style: Regular;
 font-size: 16px;
 line-height: 150%;
 letter-spacing: 1%;
 color: #666666;
-margin-top: 8px;
-
-}
-.large-card{
-  display: flex;
-  flex-direction: column;
-  
-  align-items: center;
-width: 47.5%;
-height: 424px;
-margin-bottom: 44px;
+margin-top: 4px;
 }
 
-.large-card img{
-  width: 600px;
-  height: 260px;
-  border-radius: 24px;
-  margin-bottom: 24px;
-  object-fit: cover;
-}
 
-.large-card h2{
-  
+.small-card a{
+ 
   font-family: Roboto;
 font-weight: 700;
 font-style: Bold;
-font-size: 24px;
-
-line-height: 150%;
-letter-spacing: 1%;
-color: #4D63E2;
-}
-.large-card p{
-  
-font-family: Roboto;
-font-weight: 400;
-font-style: Regular;
 font-size: 16px;
 line-height: 150%;
-letter-spacing: 1%;
-color: #666666;
-margin-top: 8px;
+letter-spacing: 1.5%;
+vertical-align: middle;
+color: #4D63E2;
 
 }
+
+.small-card a i{
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+}
+
 /* end main content */
 
 /* FOOTER */
