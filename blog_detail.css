@@ -437,6 +437,11 @@ color: #4D63E2;
   font-size: 12px;
 }
 
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* end main content */
 
 /* FOOTER */
