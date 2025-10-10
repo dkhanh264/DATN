@@ -22,7 +22,6 @@ a {
   background-repeat: none;
   background-size: cover;
   background-clip: border-box;
-  z-index: 1;
 }
 
 .navbar {
@@ -37,6 +36,7 @@ a {
   box-sizing: border-box;
   padding: 0px 104px 0px 104px;
   align-items: center;
+  z-index: 1;
 }
 
 .logo {
@@ -337,14 +337,12 @@ margin-top: 44px;
 
 .small-card{
   display: flex;
-  position: relative;
   flex-direction: column;
 width: 390px;
 height: auto;
 margin-bottom: 44px;
 border: 2px solid #EBEBEB;
 border-radius: 24px;
-z-index: -1;
 }
 
 .small-card img{
@@ -356,17 +354,17 @@ z-index: -1;
 
 .card-content{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: fit-content;
     padding: 16px 16px 4px 16px;
     border-radius: 12px;
-    position: relative;
     background-color: #fff;
     gap: 12px;
     bottom: 12px;
-    
+    z-index: 0;
 }
 
 .tag{
