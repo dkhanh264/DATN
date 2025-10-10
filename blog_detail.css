@@ -40,6 +40,7 @@ body{
   box-sizing: border-box;
   padding: 0px 104px 0px 104px;
   align-items: center;
+  z-index: 100;
 }
 
 .logo {
