@@ -15,7 +15,7 @@ a {
 
 /* header */
 .header {
-  height: 380px;
+  height: 400px;
   width: 100%;
   background-image: url(/imgs/header-bg.jpg);
   background-position: center;
@@ -27,16 +27,16 @@ a {
 
 .navbar {
   width: 100%;
-  height: 60px;
+  height: 80px;
   position: fixed;
   background-color: #fff;
   display: flex;
-  height: 60px;
   justify-content: space-between;
   background-clip: border-box;
   box-sizing: border-box;
   padding: 0px 104px 0px 104px;
   align-items: center;
+  z-index: 1;
 }
 
 .logo {
@@ -47,7 +47,7 @@ a {
   line-height: 150%;
   letter-spacing: 1.5%;
   text-transform: uppercase;
-  color: #2a367c !important;
+  color: #2a367c;
 }
 
 .tab-list {
@@ -57,14 +57,13 @@ a {
 }
 
 .tab-list li {
-  padding: 20px 16px 20px 16px;
+  padding: 30px 16px 30px 16px;
   font-family: Roboto;
   font-weight: 700;
   font-style: Bold;
   font-size: 16px;
   letter-spacing: 1.5%;
   text-transform: uppercase;
-  
 }
 
 .tab-news {
@@ -238,12 +237,15 @@ bottom: 0px;
 .header-card-container{
   display: flex;
   height: 260px;
-  width: 100%;
+  width: 1442px;
   box-sizing: border-box;
-  margin-top: 60px;
+  margin-top: 60px !important;
   padding-left: 104px;
   padding-right: 104px;
   justify-content: space-between;
+  margin: 0 auto;
+  background: #FAFAFA;
+  background-clip: content-box;
 }
 
 .header-card-container-content{
@@ -332,9 +334,10 @@ color: #4D63E2;
   padding-left: 104px;
   padding-right: 104px;
   flex-wrap: wrap;
-width: 100%;
-justify-content: space-between;
-margin-top: 60px;
+width: 1442px;
+gap: 32px;
+margin-top: 60px !important;
+margin: 0 auto;
 }
 
 .small-card{
@@ -396,13 +399,15 @@ color: #4D63E2;
 }
 
 .pagination{
+  width: 1442px;
   display: flex;
   justify-content: right;
   box-sizing: border-box;
   padding-right: 104px;
   padding-left: 104px;
-  margin-top: 16px;
-  margin-bottom: 60px;
+  margin-top: 16px !important;
+  margin-bottom: 60px !important;
+  margin: 0 auto;
 }
 
 .back{

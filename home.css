@@ -18,28 +18,27 @@ a {
 }
 
 .header {
-  height: 184px;
+  height: 204px;
   width: 100%;
   background-image: url(/imgs/header-bg.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
   background-clip: border-box;
-  z-index: 1;
 }
 
 .navbar {
   width: 100%;
-  height: 60px;
+  height: 80px;
   position: fixed;
   background-color: #fff;
   display: flex;
-  height: 60px;
   justify-content: space-between;
   background-clip: border-box;
   box-sizing: border-box;
   padding: 0px 104px 0px 104px;
   align-items: center;
+  z-index: 1;
 }
 
 .logo {
@@ -60,7 +59,7 @@ a {
 }
 
 .tab-list li {
-  padding: 20px 16px 20px 16px;
+  padding: 30px 16px 30px 16px;
   font-family: Roboto;
   font-weight: 700;
   font-style: Bold;
@@ -152,7 +151,6 @@ color: #3746a0 !important;
   box-sizing: border-box;
   padding: 0px 104px 0px 104px;
   margin: 96px 0px 80px 0px;
-  z-index: -1;
 }
 
 .left-content {
@@ -206,9 +204,17 @@ border: none;
   position: absolute;
   width: 528px;
 height: 469px;
-right: 104px;
+left: 60px;
 border-radius: 24px;
 border: 3px solid #FFFFFF;
+transition: transform 0.3s ease;
+}
+
+.main-img:hover {
+  width: 558px;
+height: 496px;
+  box-shadow: 0px 0px 40px 0px #525ddb54;
+
 }
 
 .second-img{
@@ -263,10 +269,12 @@ z-index: 1;
   padding-left: 104px;
   margin-top: 80px;
   margin-bottom: 100px;
+   background: #FAFAFA;
 }
 
 .brand-container img{
   width: 126px;
   object-fit:contain;
+ 
 }
 

@@ -15,7 +15,7 @@ a {
 
 /* header */
 .header {
-  height: 60px;
+  height: 80px;
   width: 100%;
   background-position: center;
   background-repeat: none;
@@ -26,16 +26,16 @@ a {
 
 .navbar {
   width: 100%;
-  height: 60px;
+  height: 80px;
   position: fixed;
   background-color: #fff;
   display: flex;
-  height: 60px;
   justify-content: space-between;
   background-clip: border-box;
   box-sizing: border-box;
   padding: 0px 104px 0px 104px;
   align-items: center;
+  z-index: 1;
 }
 
 .logo {
@@ -46,7 +46,7 @@ a {
   line-height: 150%;
   letter-spacing: 1.5%;
   text-transform: uppercase;
-  color: #2a367c !important;
+  color: #2a367c;
 }
 
 .tab-list {
@@ -56,14 +56,22 @@ a {
 }
 
 .tab-list li {
-  padding: 20px 16px 20px 16px;
+  padding: 30px 16px 30px 16px;
   font-family: Roboto;
   font-weight: 700;
   font-style: Bold;
   font-size: 16px;
   letter-spacing: 1.5%;
   text-transform: uppercase;
-  
+}
+
+.tab-news {
+  border-bottom: 4px solid #3746a0;
+  background-clip: border-box;
+}
+
+.tab-news a {
+  color: #3746a0 !important;
 }
 
 .tab-home:hover{
@@ -173,13 +181,13 @@ margin-top: 20px;
 
 .main-content img{
 height: 512px;
-width: calc(100% - 208px);
+width: calc(1442px - 208px);
 object-fit: cover;
 margin-top: 40px;
 }
 
 .content-sumary-container{
-  width: calc(100% - 208px);
+  width: calc(1442px - 208px);
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -322,7 +330,7 @@ color: #FFFFFF;
 }
 
 .more{
-    width: calc(100% - 208px);
+    width: calc(1442px - 208px);
     padding-top: 24px;
     border-top: 1px solid #B0B0B0;
 }
@@ -341,8 +349,10 @@ color: #3B3B3B;
 .card-container{
   display: flex;
   flex-wrap: wrap;
-width: 100%;
-justify-content: space-between;
+width: 1442px;
+gap: 32px;
+margin-top: 60px !important;
+margin: 0 auto;
 }
 
 .small-card{
@@ -358,7 +368,6 @@ margin-bottom: 44px;
   height: 260px;
   margin-bottom: 24px;
   object-fit: cover;
-  margin-top: 0px;
 }
 
 .small-card h2{
@@ -402,6 +411,34 @@ color: #4D63E2;
   width: 24px;
   height: 24px;
   font-size: 12px;
+}
+
+.time-wrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.time-wrapper i{
+  display: flex;
+  color: #ccc;
+  font-size: 18px;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+}
+
+.time-wrapper p{
+  font-family: Roboto;
+font-weight: 500 !important;
+font-style: Medium !important;
+font-size: 16px !important;
+line-height: 150% !important;
+letter-spacing: 1% !important;
+margin-top: 0px !important;
+margin-left: 8px !important;
+color: #ccc !important;
 }
 
 /* end main content */
