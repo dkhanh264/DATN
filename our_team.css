@@ -296,15 +296,16 @@ letter-spacing: 1%;
 text-align: center;
 margin-top: 4px;
 color: #3B3B3B;
+margin-bottom: 12px;
 }
 
 .info-wrapper{
-    width: 100%;
+    width: fit-content;
     height: 108px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 12px;
+    align-self: flex-start;
+    gap: 8px;
 }
 
 .info-row{
@@ -665,3 +666,158 @@ color: #EBEBEB;
   color: rgba(0, 0, 0, 0.9);
 }
 /* end footer */
+
+/* ==== POPUP (thuần CSS) ==== */
+.pop-toggle { 
+  position: absolute; 
+  opacity: 0; 
+  pointer-events: none; 
+}
+
+/* overlay riêng cho từng popup, nằm sau input cùng cấp */
+.popup-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.45);
+  opacity: 0; 
+  visibility: hidden; 
+  transition: .2s ease;
+  z-index: 1000; /* cao hơn .navbar (z-index:1) */
+}
+
+/* hộp popup nằm sau overlay, cùng cấp với input */
+.popup {
+  position: fixed; 
+  left: 50%; 
+  top: 10%;
+  transform: translate(calc(-50% + 12px));
+  width: 873px;
+  height: fit-content;
+  background: #fff; 
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0; 
+  visibility: hidden;
+  z-index: 1001;
+}
+
+.popup__hd {
+  padding: 20px 40px 0px 40px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: right;
+}
+.popup__bd { 
+  padding: 24px 40px 32px 40px;  
+}
+
+.popup__bd img{
+  width: 100%;
+  height: 290px;
+  object-fit:cover;
+  border-radius: 16px;
+}
+
+.popup-content{
+  display: flex;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.info-wrapper h4{
+  font-family: Roboto;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 1%;
+color: #3B3B3B;
+}
+
+.info-popup{
+  width: fit-content;
+  height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 8px;
+padding-right: 15px;
+  border-right: 1px solid #B0B0B0 !important;
+}
+
+.des-wrapper{
+  width: 520px;
+  height: fit-content;
+}
+
+.name-position{
+  display: flex;
+  gap: 10px;
+}
+
+.name{
+  font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+color: #3B3B3B;
+letter-spacing: 1%;
+
+}
+
+.strenggg{
+  width: 1px;
+  height: 24px;
+  background-color: #B0B0B0;
+}
+
+.position {
+  font-family: Roboto;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+letter-spacing: 1%;
+color: #4D63E2;
+}
+
+.quote{
+  font-family: Roboto;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+color: #B0B0B0;
+letter-spacing: 1%;
+margin-top: 8px;
+}
+
+.des-wrapper p{
+  font-family: Roboto;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+color: #1C1C1C;
+letter-spacing: 1%;
+margin-top: 16px;
+}
+
+.popup__close {
+  appearance: none; 
+  border: 0; 
+  background: transparent;
+  font-size: 28px; 
+  line-height: 1; 
+  cursor: pointer;
+}
+
+/* trạng thái mở: input:checked sẽ show overlay + popup cùng cấp, đặt ngay sau nó */
+.pop-toggle:checked ~ .popup-overlay { 
+  opacity: 1; 
+  visibility: visible; 
+}
+.pop-toggle:checked ~ .popup {
+  opacity: 1; visibility: visible;
+}
+
+/* để card trông giống nút */
+.small-card { 
+  cursor: pointer; 
+}
