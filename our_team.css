@@ -821,3 +821,5 @@ margin-top: 16px;
 .small-card { 
   cursor: pointer; 
 }
+/* chặn cuộn nền khi có popup mở (trình duyệt hỗ trợ :has) */
+body:has(.pop-toggle:checked) { overflow: hidden; }
